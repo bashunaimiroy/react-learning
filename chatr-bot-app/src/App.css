@@ -1,0 +1,75 @@
+body * {
+  border:0px;
+  
+}
+.chat-form,.talking-area{
+  border-radius:10px;
+  
+}
+.buttons-field{
+  background-color:orange;
+max-width:600px;  
+margin:10px auto;
+text-align: center;
+padding:10px;
+}
+
+.chat-form{
+  display:flex;
+  width:80%;
+  padding:10px 40px;
+  justify-content: center;
+  }
+
+  .buttons-field>form * {
+  padding:10px;
+
+   font:2em verdana,arial,sans-serif;
+
+ } 
+.buttons-field>form>input{
+  max-width:80%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;  
+  height:50px;
+  vertical-align: bottom;
+  line-height: 40px;
+}
+.buttons-field>.username-form>input{
+  height:40px;
+}
+.buttons-field button{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;  
+  
+  font-size:2em;
+}
+.talking-area{
+  margin:auto;
+  width:500px;
+  height:500px;
+  padding:15px;
+  font:1.5em arial,sans-serif;
+  background-color: rgb(47, 179, 255);
+}
+.talking-area ul{
+  list-style: none;
+}
+.talking-area .human-msg{
+  color: rgb(255, 217, 0);
+}
+.talking-area .bot-msg{
+  color: rgb(0, 0, 0);
+}
+.talking-area .freddo-msg{
+  color: rgb(255, 203, 203);
+}
+.chat-form>.username-change{
+  transition:transform 100ms ease-in;
+}
+.username-change.slide-out{
+  transform:translateX(220px);
+}
+.username-change.slide-in{
+  transform:translateX(-220px);
+}
