@@ -2,16 +2,33 @@ body * {
   border:0px;
   
 }
+
+a{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.hide{
+  display:none
+}
+.container{
+  display:flex;
+  justify-content:space-around;
+}
 .chat-form,.talking-area{
   border-radius:10px;
   
 }
 .buttons-field{
-  background-color:orange;
 max-width:600px;  
 margin:10px auto;
 text-align: center;
 padding:10px;
+}
+.bongo .buttons-field{
+  background-color: orange;
+}
+.dongo .buttons-field{
+  background-color: yellowgreen;
 }
 
 .chat-form{
@@ -51,15 +68,22 @@ border-bottom-left-radius: 10px;
   padding:15px;
   font:1.5em arial,sans-serif;
   background-color: rgb(47, 179, 255);
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .talking-area ul{
   list-style: none;
+  width:100%;
+}
+.talking-area header{
+  height:50px;
 }
 .talking-area .human-msg{
   color: rgb(255, 217, 0);
 }
 .talking-area .bot-msg{
-  color: rgb(0, 0, 0);
+  color: rgb(215, 255, 163);
 }
 .talking-area .freddo-msg{
   color: rgb(255, 203, 203);
